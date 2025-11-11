@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const fruits = ["apple", "banana"];
+const moreFruits = ["cherry", "mango"];
+
+const allFruits = [...fruits, ...moreFruits];
+console.log("Merged Fruits:", allFruits);
+
+
+function printFruits(...items) { 
+  console.log("Fruits List:");
+  items.forEach(fruit => console.log(fruit));
+}
+
+printFruits("apple", "orange", "grape");
+    </script>
+    
+</body>
+</html>
